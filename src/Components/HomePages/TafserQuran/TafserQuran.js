@@ -122,7 +122,7 @@ const TafsirQuran = () => {
 
   const tafsirNameData = async () => {
     try {
-      const response = await fetch("https://api.alquran.cloud/v1/edition/type/tafsir");
+      const response = await fetch("https://api.allorigins.win/raw?url=" + encodeURIComponent("http://api.quran-tafseer.com/tafseer/"));
       
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
