@@ -120,25 +120,24 @@ const TafsirQuran = () => {
 
 
 
-  // Get All Tafsirs Name To Show It In SelectBox
   const tafsirNameData = async () => {
     try {
+      const response = await fetch("https://api.alquran.cloud/v1/edition/type/tafsir");
       
-      const response = await fetch("https://cors-anywhere.herokuapp.com/http://api.quran-tafseer.com/tafseer/");
-
       if (!response.ok) {
-        throw new Error(`http error! Status: ${response.status}`);
+        throw new Error(`HTTP error! Status: ${response.status}`);
       }
-
+  
       const data = await response.json();
       console.log(data);
-      
+  
       setTafsirName(data);
     } catch (error) {
       alert("❌ Failed to fetch Tafseer. Please try again.");
       console.error(error);
     }
   };
+  
 
   // ----------------------------------------------------------------
 
