@@ -1,0 +1,5 @@
+@media screen and (max-width: 640px) {
+    .card_content{
+        padding: 20px;
+    }
+}

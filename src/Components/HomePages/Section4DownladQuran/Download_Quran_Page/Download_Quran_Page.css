@@ -1,0 +1,26 @@
+
+@media screen and (max-width: 500px) {
+    .DownloadQuran_content{
+        width: 97%;
+    }
+    .DownloadQuran_image img{
+        width: 97%;
+    }
+    .DownloadQuran_image_details_child{
+        width: 97%;
+    }
+    .DownloadQuran_content_box{
+        width: 97%;
+    }
+}
+
+.loadingSpinner span{
+    animation: spin 1.5s  infinite linear ;
+ }
+ 
+ @keyframes spin{
+     to{
+         transform: rotate(360deg);
+     }
+ }
+ 
